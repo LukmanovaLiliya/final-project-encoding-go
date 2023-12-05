@@ -29,8 +29,7 @@ type MyEncoder interface {
 }
 
 func (j *JSONData) Encoding() error {
-	// ниже реализуйте метод
-	// ...
+
 	jsonFile, err := os.ReadFile(j.FileInput)
 	if err != nil {
 		fmt.Printf("ошибка при чтении файла: %s", err.Error())
@@ -66,8 +65,7 @@ func (j *JSONData) Encoding() error {
 
 // Encoding перекодирует файл из YAML в JSON
 func (y *YAMLData) Encoding() error {
-	// Ниже реализуйте метод
-	// ...
+
 	yamlFile, err := os.ReadFile(y.FileInput)
 	if err != nil {
 		fmt.Printf("ошибка при чтении файла: %s", err.Error())
